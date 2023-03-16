@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dogs  
+  description: Micropets Dogs Service
+  tags:
+    - web
+    - tanzu
+    - golang  
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/name=dogs'
+    'github.com/project-slug': 'bmoussaud/micropets-app/dogs'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: the-pet-team
+  system: micropets
