@@ -11,12 +11,12 @@
     "from": "Europ"
   },
   "observability": {
-    "enable": false,
+    "enable": true,
     "application": "micropets",
-    "service": "pets",
+    "service": "dogs",
     "cluster": "us-west",
     "shard": "primary",
-    "server": "xxxx.wavefront.com",
+    "server": "https://binz.wavefront.com",
     "token": "x-y-z-y"
   }
 }

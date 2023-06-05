@@ -206,6 +206,5 @@ func Start() {
 	fmt.Printf("******* Starting to the dogs service on port %s, mode %s\n", config.Service.Port, config.Service.Mode)
 	fmt.Printf("******* Delay Period %d Amplitude %f shift %d \n", config.Service.Delay.Period, config.Service.Delay.Amplitude, shift)
 	fmt.Printf("******* Frequency Error %d\n", config.Service.FrequencyError)
-	
 	log.Fatal(http.ListenAndServe(config.Service.Port, logRequest(http.DefaultServeMux)))
 }
