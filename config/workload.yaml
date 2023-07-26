@@ -15,14 +15,14 @@ spec:
     git:
       url: https://github.com/bmoussaud/micropets-dogs-golang/
       ref:
-        branch: main    
+        branch: main
   serviceClaims:
     - name: app-config
       ref:
         apiVersion: v1
         kind: Secret
         name: dogs-config
-  params:   
+  params:
     - name: testing_pipeline_matching_labels
       value:
         apps.tanzu.vmware.com/pipeline: test-golang
